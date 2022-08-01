@@ -1,0 +1,17 @@
+﻿id,name,type,content
+0,Bridge-Tower: Building Bridges Between Encoders in Vision-Language Representation Learning,多模态预训练模型,采用了一个下双流+上单流的架构，同时单模态Transformer会延展到上层，是一个12+12+6的总架构。上层的单模态层会与交叉层做额外的交互，因此结果会相当的好
+1,Multimodal Contrastive Learning with LIMoE:the Language-Image Mixture of Experts,CLIP变种,一个共同的模型来做CLIP的双塔，利用MOE来分别进行图像和文本的编码
+2,How Much Can CLIP Benefit Vision-and-Language Tasks?,CLIP变种,通过CLIP进行一系列的下游任务
+3,SimCSE: Simple Contrastive Learning of Sentence Embeddings,句子嵌入,通过单一的encoder做对比学习，无监督通过不同的dropout例子，有监督关系数据集来做正负例
+4,MCSE: Multimodal Contrastive Learning of Sentence Embeddings,视觉增强文本表示学习,利用图像来增强simcse，利用文本的相应图片来做正负例，并在STS数据集上取得了不错的结果
+5,Cross-Modal Discrete Representation Learning,多模态表示学习,用离散的embedding去尝试表示不同模态的数据，增加了CMCL损失函数来保证相似的输入的codebook分布是相近的，最终不仅提高了性能，同时也通过离散的token得到了对实验结果的可解释性
+6,MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices,预训练模型压缩,主体方法为知识蒸馏，但是采用了一个同样深与BERT-LARGE但会窄很多的老师模型为一个特殊的BERT-LARGE模型，中间采用类似adapter的结构来减少中间隐藏层参数量。同时提出了一系列训练与结构trick来辅助知识蒸馏进程
+7,"DistilBERT, a distilled version of BERT: smaller,faster, cheaper and lighter",预训练模型压缩,单纯的知识蒸馏，去掉了token type embedding与pooler，把层数压缩到只有一半
+8,TinyBERT: Distilling BERT for Natural Language Understanding,预训练模型压缩,采用一个两阶段的知识蒸馏，先对预训练模型进行知识蒸馏，再在微调时进行task-specific的知识蒸馏。同时采取了word-replacement的知识增强。最终蒸馏得到了一个四层的Bert
+9,ALBERT: A LITE BERT FOR SELF-SUPERVISED LEARNING OF LANGUAGE REPRESENTATIONS,预训练模型压缩,采用了层参数共享，embedding截断以及增加数据量等方式压缩albert，使其参数量缩减至10%，但是保持了结果。问题在于并没有加快推理速度
+10,Enabling Lightweight Fine-tuning for Pre-trained Language Model Compression based on Matrix Product Operators ,预训练模型轻量化微调,用MPO进行张量分解，对核心张量冻结，微调辅助张量
+11,Exploiting Redundancy in Pre-trained Language Models for Efficient Transfer Learning,预训练模型信息冗余,预训练模型中存在着信息冗余，其表现为：浅层的特征也可以做很好的下游任务特征，即上层的结构冗余。或者大量特征趋向于同质性，相似度冗余。还有抽取出的各类特征不一定均会对下游任务起作用，即特征冗余。采取了两种方式分别裁剪层数与特征数，削减了冗余，并取得了不错的下游任务效果
+12,Analyzing Redundancy in Pretrained Transformer Models,预训练模型信息冗余,与上一篇基本相同，但是添加了冗余性的定义
+13,Funnel-Transformer: Filtering out Sequential Redundancy for Efficient Language Processing,预训练模型冗余,在encoder-decoder的encode过程中，通过池化来减少输入序列长度，在decode过程中还原序列长度以减少flops
+14,"Drop Redundant, Shrink Irrelevant: Selective Knowledge Injection for Language Pretraining",预训练模型冗余在向预训练模型注,在向预训练模型注入知识的时候，可能存在一些知识已经从语料中获取过，会存在冗余或不相关的知识，影响预训练模型本身的性能，需要进行排除
+15,A Unified Sequence Interface for Vision Tasks,unified多模态模型,将四个视觉任务统一到一seq2seq任务中，并利用prompt引导任务相关的输出
