@@ -15,3 +15,4 @@
 13,Funnel-Transformer: Filtering out Sequential Redundancy for Efficient Language Processing,预训练模型冗余,在encoder-decoder的encode过程中，通过池化来减少输入序列长度，在decode过程中还原序列长度以减少flops
 14,"Drop Redundant, Shrink Irrelevant: Selective Knowledge Injection for Language Pretraining",预训练模型冗余在向预训练模型注,在向预训练模型注入知识的时候，可能存在一些知识已经从语料中获取过，会存在冗余或不相关的知识，影响预训练模型本身的性能，需要进行排除
 15,A Unified Sequence Interface for Vision Tasks,unified多模态模型,将四个视觉任务统一到一seq2seq任务中，并利用prompt引导任务相关的输出
+16,Contrastive Visual Semantic Pretraining Magnifies the Semantics of Natural Language Representations,CLI多模态embedding与PLM embedding分析,对CLIP和GPT2的word embedding与sentence embedding做了相似度计算与分析
