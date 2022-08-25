@@ -16,3 +16,10 @@
 14,"Drop Redundant, Shrink Irrelevant: Selective Knowledge Injection for Language Pretraining",预训练模型冗余在向预训练模型注,在向预训练模型注入知识的时候，可能存在一些知识已经从语料中获取过，会存在冗余或不相关的知识，影响预训练模型本身的性能，需要进行排除
 15,A Unified Sequence Interface for Vision Tasks,unified多模态模型,将四个视觉任务统一到一seq2seq任务中，并利用prompt引导任务相关的输出
 16,Contrastive Visual Semantic Pretraining Magnifies the Semantics of Natural Language Representations,CLI多模态embedding与PLM embedding分析,对CLIP和GPT2的word embedding与sentence embedding做了相似度计算与分析
+17,DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings,预训练表征学习,通过一种基于diff的方式，采用一个预训练好的PLM，通过MLM来生成增强样本，待训练的PLM会对文本进行encoding，生成的embedding作为单独的向量来对增强样本进行引导，最后训练一个分类层来观察两个样本之间的difference，从而得到更好的预训练表示
+18,A Unified Sequence Interface for Vision Tasks,Unified VLP,通过一系列的文本prompt多模态模型进行创传统视觉任务
+19,NoisyTune: A Little Noise Can Help You Finetune Pretrained Language Models Better,预训练模型微调,在微调前直接对参数矩阵加入一定噪声，帮助缓解过拟合
+20,MiniVLM: A Smaller and Faster Vision-Language Model,预训练模型压缩,采用了一个轻量级的目标检测器与fusion transformer进行压缩，得到一个轻量级的VLP
+21,Compressing Visual-linguistic Model via Knowledge Distillation,预训练模型压缩,此前工作的延申，通过知识蒸馏手段压缩各个部分的层数以及大小
+22,MobiVQA: Efficient On-Device Visual Question Answering,预训练模型压缩,通过early-exit手段提前退出，通过pruning手段剪枝掉不需要的像素，舍弃掉了目标检测器，最终得到了一个移动端运行的快速VQA
+23,MINILM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers,预训练模型压缩,改进版的对Bert的知识蒸馏
