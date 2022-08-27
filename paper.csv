@@ -23,3 +23,7 @@
 21,Compressing Visual-linguistic Model via Knowledge Distillation,预训练模型压缩,此前工作的延申，通过知识蒸馏手段压缩各个部分的层数以及大小
 22,MobiVQA: Efficient On-Device Visual Question Answering,预训练模型压缩,通过early-exit手段提前退出，通过pruning手段剪枝掉不需要的像素，舍弃掉了目标检测器，最终得到了一个移动端运行的快速VQA
 23,MINILM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers,预训练模型压缩,改进版的对Bert的知识蒸馏
+24,Image as a Foreign Language: BEIT Pretraining for All Vision and Vision-Language Tasks,Unified VL,BeiT v3:采用VLMo作为backbone，将所有不同的视觉，语言，v-l预训练任务统一到一个masked data modeling中，在公开数据集上训练，相对于所有的模型都取得了很大成功。
+25,VLMO: Unified Vision-Language Pre-Training with Mixture-of-Modality-Experts,Unified VL,采用了混合专家的FFN来分别处理视觉，文本，视觉-文本输入，共享attention层。VLMo可以同时进行CLIP-style image-text contrastive learning与fusion-style MLM，在下游任务上取得很大成功
+26,BEIT: BERT Pre-Training of Image Transformers,image pre-training,首先将图像表示成patches，每个patch通过dVAE映射到一个discrete token，然后再decode复原（dVAE过程）。预训练时对图像进行随机mask，mask后的图像输入的image transformer，并要求predict出对应的visual token
+27,How Much Can CLIP Benefit Vision-and-Language Tasks?,CLIP-related,采用CLIP作为核心去进行各类的下游任务
