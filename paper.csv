@@ -27,3 +27,7 @@
 25,VLMO: Unified Vision-Language Pre-Training with Mixture-of-Modality-Experts,Unified VL,采用了混合专家的FFN来分别处理视觉，文本，视觉-文本输入，共享attention层。VLMo可以同时进行CLIP-style image-text contrastive learning与fusion-style MLM，在下游任务上取得很大成功
 26,BEIT: BERT Pre-Training of Image Transformers,image pre-training,首先将图像表示成patches，每个patch通过dVAE映射到一个discrete token，然后再decode复原（dVAE过程）。预训练时对图像进行随机mask，mask后的图像输入的image transformer，并要求predict出对应的visual token
 27,How Much Can CLIP Benefit Vision-and-Language Tasks?,CLIP-related,采用CLIP作为核心去进行各类的下游任务
+28,IDEA: Increasing Text Diversity via Online Multi-Label Recognition for Vision-Language Pre-training,CLIP变种,通过多标签识别，对图-文对语料中存在不清晰指代的文本描述进行指代替换（替换为识别出的tag），生成更加多样化，更加详细的文本描述，并提高视觉编码器的能力
+29,LANGUAGE MODELLING WITH PIXELS,奇怪的语言模型,将所有语言用文字表示出来，将文本任务视作视觉识别任务来做预训练
+30,Learning More May Not Be Better: Knowledge Transferability in Vision and Language Tasks,V-L模型任务迁移研究,对12个V-L下游任务分组采用两次微调的方式研究source task到target task的积极或消极作用，并研究了可能的原因
+31,Bi-VLDoc: Bidirectional Vision-Language Modeling for Visually-Rich Document Understanding,多模态文档理解,LayoutLM的一个后续工作
