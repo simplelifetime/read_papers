@@ -35,3 +35,7 @@
 33,OPEN-VOCABULARY OBJECT DETECTION VIA VISION AND LANGUAGE KNOWLEDGE DISTILLATION,CLIP蒸馏应用,"为了解决在目标检测时，目标检测类别有限的问题，通过大量开放领域图-文对训练的CLIP进行知识蒸馏。目标检测的RP通过裁剪到同一尺寸后送入CLIP的image encoder,对应类别通过prompt生成语句后送入text encoder，最终进行一个alignment。传统的类别classifier也被生成的text embedding所替代。"
 34,UniMS: A Unified Framework for Multimodal Summarization with Knowledge Distillation,CLIP蒸馏应用,在做多模态摘要时，首先需要进行一个图像选择，再进行摘要生成，由于CLIP本身包含了400M图-文对的信息，可以通过将CLIP知识蒸馏到BART encoder的图像端来辅助其完成一个图像检索工作，检索完成后，通过两个特征的拼接再送入一个decoder来生成摘要。
 35,LiT : Zero-Shot Transfer with Locked-image text Tuning,CLIP实验,google通过一系列的实验，包括设置双塔是否冻结，是否加载预训练权重或随机初始化等等，试出了最佳的预训练方案是Lock image and random initialize text
+36,LAVIS: A Library for Language-Vision Intelligence,多模态预训练模型库,一个多模态预训练模型库，包含了模型，数据，任务，评测等功能
+37,ClipCap: CLIP Prefix for Image Captioning,CLIP生成应用,用CLIP对图像的embedding编码，编码后的输出作为prompt引导GPT-2的输出
+38,Fine-grained Image Captioning with CLIP Reward,CLIP for generation,采用了CLIP做reward来辅助enc-dec模型的生成进程，通过一个grammer-enhanced全连接层训练语法增强，最后在一个自建的更细粒度的数据集上进行了实验
+39,Vision-Language Matching for Text-to-Image Synthesis via Generative Adversarial Networks,Text-to-image generation,在一个多粒度的层面上对给定图像-文本进行匹配，并对GAN生成的图片和给定文本进行匹配，保证生成高质量图片的同时还能保证图-文的细粒度匹配程度
