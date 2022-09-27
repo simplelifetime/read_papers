@@ -1,15 +1,3 @@
-Enabling Multimodal Generation on CLIP via Vision-Language Knowledge Distillation
-CLIP蒸馏应用
-为了解决CLIP模型无法做生成任务的问题，采用了一个BART，通过知识蒸馏的方式与CLIP的image encoder对齐，并通过三个训练函数来训练BART的V-L对齐能力，V-enhanced生成能力以及与CLIP textencoder的对齐能力，并在一系列caption任务上取得了不错的效果
-
-OPEN-VOCABULARY OBJECT DETECTION VIA VISION AND LANGUAGE KNOWLEDGE DISTILLATION
-CLIP蒸馏应用
-为了解决在目标检测时，目标检测类别有限的问题，通过大量开放领域图-文对训练的CLIP进行知识蒸馏。目标检测的RP通过裁剪到同一尺寸后送入CLIP的image encoder,对应类别通过prompt生成语句后送入text encoder，最终进行一个alignment。传统的类别classifier也被生成的text embedding所替代。
-
-UniMS: A Unified Framework for Multimodal Summarization with Knowledge Distillation
-CLIP蒸馏应用
-在做多模态摘要时，首先需要进行一个图像选择，再进行摘要生成，由于CLIP本身包含了400M图-文对的信息，可以通过将CLIP知识蒸馏到BART encoder的图像端来辅助其完成一个图像检索工作，检索完成后，通过两个特征的拼接再送入一个decoder来生成摘要。
-
-LiT : Zero-Shot Transfer with Locked-image text Tuning
-CLIP实验
-google通过一系列的实验，包括设置双塔是否冻结，是否加载预训练权重或随机初始化等等，试出了最佳的预训练方案是Lock image and random initialize text
+Beyond a Pre-Trained Object Detector: Cross-Modal Textual and Visual Context for Image Captioning
+Image Captioning
+采用CLIP-I编码器与目标检测器协同辅助captions的生成过程

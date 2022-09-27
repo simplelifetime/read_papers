@@ -39,3 +39,9 @@
 37,ClipCap: CLIP Prefix for Image Captioning,CLIP生成应用,用CLIP对图像的embedding编码，编码后的输出作为prompt引导GPT-2的输出
 38,Fine-grained Image Captioning with CLIP Reward,CLIP for generation,采用了CLIP做reward来辅助enc-dec模型的生成进程，通过一个grammer-enhanced全连接层训练语法增强，最后在一个自建的更细粒度的数据集上进行了实验
 39,Vision-Language Matching for Text-to-Image Synthesis via Generative Adversarial Networks,Text-to-image generation,在一个多粒度的层面上对给定图像-文本进行匹配，并对GAN生成的图片和给定文本进行匹配，保证生成高质量图片的同时还能保证图-文的细粒度匹配程度
+40,Prompt Tuning for Generative Multimodal Pretrained Models,VLP微调,prompt tuning of OFA
+41,How to Adapt Pre-trained Vision-and-Language Models to a Text-only Input?,VLP分析,"通过对五个多模态预训练模型的empircal study,发现多模态增加的视觉端训练并不一定能够增强文本counterpart的NLP理解能力"
+42,Playing Lottery Tickets with Vision and Language,VLP分析,直接对三个代表性的VLP进行LTH分析，采取两个方式任务无偏的预训练和任务相关的微调来观察子网络的稀疏度和有效性，并展示了LTH在VLP里是有效的
+43,Scaling Up Vision-Language Pre-training for Image Captioning,image captioning,增加数据集并进行empirical study
+44,ZeroCap: Zero-Shot Image-to-Text Generation for Visual-Semantic Arithmetic,zero-shot image captioning,通过CLIP来对生成语句进行zero-shot引导，并实现了图像的运算caption
+45,Beyond a Pre-Trained Object Detector: Cross-Modal Textual and Visual Context for Image Captioning,Image Captioning,采用CLIP-I编码器与目标检测器协同辅助captions的生成过程
