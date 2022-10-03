@@ -45,3 +45,13 @@
 43,Scaling Up Vision-Language Pre-training for Image Captioning,image captioning,增加数据集并进行empirical study
 44,ZeroCap: Zero-Shot Image-to-Text Generation for Visual-Semantic Arithmetic,zero-shot image captioning,通过CLIP来对生成语句进行zero-shot引导，并实现了图像的运算caption
 45,Beyond a Pre-Trained Object Detector: Cross-Modal Textual and Visual Context for Image Captioning,Image Captioning,采用CLIP-I编码器与目标检测器协同辅助captions的生成过程
+46,mPLUG: Effective and Efficient Vision-Language Learning by Cross-modal Skip-connections,VLP pretraining,采取了全新的架构，通过skip-connections来减小运算flops数，削减了视觉编码器的层数来减少模型规模，采用Prefix-LM做生成
+47,ChineseBERT: Chinese Pretraining Enhanced by Glyph and Pinyin Information,Chinese BERT,同时考虑字音字形来增强中文预训练模型
+48,MarkBERT: Marking Word Boundaries Improves Chinese BERT,Chinese BERT,采用了特殊的Marker来分别Chinese BERT中的字符，来达到word-level的认知效果
+49,RoCBert: Robust Chinese Bert with Multimodal Contrastive Pretraining,Chinese BERT,采用了跨模态对比学习和对抗学习来增强中文BERT的鲁棒性
+50,STYLEBERT: CHINESE PRETRAINING BY FONT STYLE INFORMATION,Chinese Bert,在拆字基础上采用了偏旁的方法，加入了拆字encoding增加embedding多样性
+51,LANGUAGE MODELS CAN SEE: PLUGGING VISUAL CONTROLS IN TEXT GENERATION,zero-shot image Captioning,采用CLIP来逐token的控制PLM的输出
+52,CLIP-Adapter: Better Vision-Language Models with Feature Adapters,CLIP 轻量化,采用了一种Adapter+side-tuning的方式，防止了模型在few-shot数据上的过拟合，并加强了在一些特定domain数据集上的结果
+53,VL-ADAPTER: Parameter-Efficient Transfer Learning for Vision-and-Language Tasks,VLM 轻量化,单纯的采用各种Adapter变种在VLM上做尝试
+54,Tip-Adapter: Training-free CLIP-Adapter for Better Vision-Language Modeling,CLIP 轻量化,在CLIP-Adapter基础上利用cache与匹配设计了一般training-free的方案，取得了更好的效果
+55,Visual Prompt Tuning,ViT 轻量化,Prompt-tuning在ViT上的尝试

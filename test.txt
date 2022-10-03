@@ -1,3 +1,23 @@
 Beyond a Pre-Trained Object Detector: Cross-Modal Textual and Visual Context for Image Captioning
 Image Captioning
 采用CLIP-I编码器与目标检测器协同辅助captions的生成过程
+
+mPLUG: Effective and Efficient Vision-Language Learning by Cross-modal Skip-connections
+VLP pretraining
+采取了全新的架构，通过skip-connections来减小运算flops数，削减了视觉编码器的层数来减少模型规模，采用Prefix-LM做生成
+
+ChineseBERT: Chinese Pretraining Enhanced by Glyph and Pinyin Information
+Chinese BERT 
+同时考虑字音字形来增强中文预训练模型
+
+MarkBERT: Marking Word Boundaries Improves Chinese BERT
+Chinese BERT 
+采用了特殊的Marker来分别Chinese BERT中的字符，来达到word-level的认知效果
+
+RoCBert: Robust Chinese Bert with Multimodal Contrastive Pretraining
+Chinese BERT
+采用了跨模态对比学习和对抗学习来增强中文BERT的鲁棒性
+
+LANGUAGE MODELS CAN SEE: PLUGGING VISUAL CONTROLS IN TEXT GENERATION
+zero-shot image Captioning
+采用CLIP来逐token的控制PLM的输出
