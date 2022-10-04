@@ -55,3 +55,5 @@
 53,VL-ADAPTER: Parameter-Efficient Transfer Learning for Vision-and-Language Tasks,VLM 轻量化,单纯的采用各种Adapter变种在VLM上做尝试
 54,Tip-Adapter: Training-free CLIP-Adapter for Better Vision-Language Modeling,CLIP 轻量化,在CLIP-Adapter基础上利用cache与匹配设计了一般training-free的方案，取得了更好的效果
 55,Visual Prompt Tuning,ViT 轻量化,Prompt-tuning在ViT上的尝试
+56,Domain Prompt Learning for Efficiently Adapting CLIP to Unseen Domains,prompt for domain generalization,利用prompt在CLIP上做domain generalization
+57,Unsupervised Prompt Learning for Vision-Language Models,CLIP 轻量化,先利用多个CLIP集成模型获得对应图像的伪标签（同时进行标签类别的去偏），再用prompt+进一步的无监督训练提高模型精度（采用此前生成的伪标签）
